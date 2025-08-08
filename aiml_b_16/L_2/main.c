@@ -4,6 +4,8 @@
 int main()
 {
     printf("Hello world!\n");
-    man();
+    for(int i = 0;i<30;i++){
+        printf("*");
+    }
     return 0;
 }
