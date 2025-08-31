@@ -33,15 +33,12 @@ int main()
             pos = i;
             for( j= 0;j<n-i;j++){
                     if(small>a[j+i]){
-                            printf("asd");
                         pos = j+i;
                     }
             }
             temp = a[i];
             a[i] = a[pos];
             a[pos] = temp;
-
-
         }
     //print the values of selection sort
     printf("selection sort output\n");
@@ -50,7 +47,7 @@ int main()
     }
     //insertion sort
     for(int i = 0;i<n;i++){
-            small = a[i]
+            small = a[i];
         for(j = i;j>=0;j--){
             if(a[j]<small){
                 pos = j;
