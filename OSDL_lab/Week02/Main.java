@@ -51,6 +51,7 @@ class Hotel_billing{
 public class Main {
     public static void main(String[] args){
         Booking_type r1 = Booking_type.DELUXE;
+        System.out.println("Booking type"+r1);
         Booking_type r2 = Booking_type.SUITE;
         Hotel_billing room1 = new Hotel_billing(100,10,r1);
         Hotel_billing room2 = new Hotel_billing(101,9,r2);

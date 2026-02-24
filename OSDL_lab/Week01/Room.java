@@ -21,6 +21,7 @@ public class Room {
         this.roomno = roomno;
         this.type = type;
     }
+
     Room(int roomno, String type, double base){
         this.roomno = roomno;
         this.type = type;
@@ -58,13 +59,26 @@ class DeluxeRoom extends Room{
 
 }
 
+class DR extends Room{
+    DR(int r,String t){
+        super(r, t);
+
+    }
+    
+    public void display(){
+        return;
+    }
+
+}
+
 class demoRoom{
     public static void main(String[] args) {
-        Room r = new Room(11, "single");
-        Room a = new Room(22, "Double",33.44);
-        DeluxeRoom dr = new DeluxeRoom(0, "ultra",33.4,true,true);
-        r.display();
-        a.display();
-        dr.display();
+        // Room r = new Room(11, "single");
+        // Room a = new Room(22, "Double",33.44);
+        // DeluxeRoom dr = new DeluxeRoom(0, "ultra",33.4,true,true);
+        // r.display();
+        // a.display();
+        // dr.display();
+        DR d = new DR(101,"delux");
     }
 }

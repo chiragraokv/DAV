@@ -1,4 +1,3 @@
-// parent_child_shared_memory.c
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
@@ -36,7 +35,7 @@ int main() {
         else
             ch = ch + 1;
 
-        *shm = ch;      // Send back to parent
+        *shm = ch;      
         shmdt(shm);
     }
 

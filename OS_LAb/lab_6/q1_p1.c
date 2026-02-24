@@ -1,7 +1,4 @@
-/*
-Write a cpp program to imlimen =t fcfs algo
-*/
-// sender.c
+
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>

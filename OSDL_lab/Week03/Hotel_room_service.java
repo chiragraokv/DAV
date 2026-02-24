@@ -71,6 +71,25 @@ class Process_payment implements Runnable{
         }
 }
 
+class Proxy extends Thread{
+    Proxy(){
+        this.setName("Anbessa");
+        this.setPriority(MAX_PRIORITY);
+    }
+
+    public void run(){
+        try{
+            System.out.println("uwu");
+            Thread.yield();
+            sleep(1000);
+        }
+        catch(InterruptedException e){
+        
+        }
+
+    }
+}
+
 public class Hotel_room_service {
     public static void main(String[] args){
     Thread t1 = new Thread(new Service("cleaning", 10,100000));
@@ -88,6 +107,8 @@ public class Hotel_room_service {
     }catch(InterruptedException e){
         System.out.println(e);
     }
+    Proxy p = new Proxy();
+    p.start();
     t3.start();
     t4.start();;
     t5.start();

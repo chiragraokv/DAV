@@ -39,6 +39,16 @@ class Room_database{
             System.out.println("Booking interrupted");
         }
     }
+    public void  proxy(){
+        try {
+            synchronized(this){
+        }
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        
+    }
 
     public synchronized void release_room(int r_no){
         r[r_no] = true;

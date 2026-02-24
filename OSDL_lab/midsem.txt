@@ -1,0 +1,10 @@
+Create a Chat logger that logs Chat into a chatlog.txt file.
+
+There should be 3 threads 
+Sender should write to the chatlog file
+make sure the tezt are written correctly and there is no missing message
+Receiver should read from the chatlog file
+Moderator should moderate the chat and close the chat
+
+Manage the above using synchronization, make sure Sender is not sending message while reader is reading
+The sender should be able to send multiple messages and reader should print those

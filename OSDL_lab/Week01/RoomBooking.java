@@ -11,7 +11,27 @@ iii.In the main class, create a base class reference of type Room and assign it 
         where the method call is resolved at runtime based on the actual object type
  */
 
-    
+abstract class InnerRoomBooking {
+    abstract int fun();
+    abstract void f();
+    public void norm(){
+        System.out.println("nothing");
+    } 
+}
+
+class child extends InnerRoomBooking{
+    child(){
+
+    }
+    public int fun(){
+        return 0;
+    }
+    public void f(){
+
+    }
+
+}
+
 
 class StandardRoom extends Room{
     private boolean ac,additional;
