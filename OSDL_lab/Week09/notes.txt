@@ -1,0 +1,3 @@
+they are trying to create a application
+start is where is interface is created
+launch is used to initiate a 
